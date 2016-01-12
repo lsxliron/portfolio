@@ -1,0 +1,10 @@
+{
+	"name": "Portfolio",
+	"version": "1.0",
+	"dependencies": {
+		"jquery": null,
+		"requirejs": null,
+		"bootstrap": "3.3.6",
+		"fontawesome": null
+	}
+}
