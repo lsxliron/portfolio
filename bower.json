@@ -4,7 +4,7 @@
 	"dependencies": {
 		"jquery": null,
 		"requirejs": null,
-		"bootstrap": "3.3.6",
-		"fontawesome": null
+		"fontawesome": null,
+		"bootstrap-sass-official": null
 	}
 }

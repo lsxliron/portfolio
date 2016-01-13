@@ -2,7 +2,7 @@ require.config({
 
 	paths: {
 		"jquery": "vendor/jquery/dist/jquery",
-		"bootstrap": "vendor/bootstrap/dist/js/bootstrap.min"
+		"bootstrap": "vendor/bootstrap-sass-official/assets/javascripts/bootstrap.min"
 	},
 
 	shim: {
