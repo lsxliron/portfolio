@@ -23,25 +23,17 @@
 
 html, body{min-height:100%; height:100%;}
 
-
-
-#nameHeader{
-	font-size:450%;
-	font-family: "Alegreya";
-	// margin-top:40%;
-}
-
-#descriptionHeader{
-	font-family: "Alegreya";
-	// margin-top:5%;
-}
-
 .page{
 	width: 100%;
 	min-height: 100%;
 	height: 100%;
 	position:relative;
 	text-align:center;
+}
+
+.fill{
+	height:100%;
+	min-height:100%;
 }
 
 #welcomePage{
@@ -51,40 +43,112 @@ html, body{min-height:100%; height:100%;}
 	background-image: url("../img/backgrounds/dark_mosaic.png");
 }
 
-.fill{
-	height:100%;
-	min-height:100%;
-}
+#nameHeader{font-family: "Alegreya";}
+#descriptionHeader{font-family: "Alegreya";}
 
-.getStartedButton{
-	width:100%;
-	@media (min-width: $screen-sm-min){
-		font-size: 2em;
+
+
+
+
+.welcomeRow{
+	@media (min-width: 10px){
+		margin-top: 10%;
+		#descriptionHeader{margin-top: 30%; font-size:1.6em; }
+		a{margin-top:30%; font-size: 1.2em; font-family: "Andika"}
+		#nameHeader{font-size: 2.2em;}
+	}
+	
+	@media (min-width: 10px) and (orientation: landscape){
+		margin-top: 2%;
+		#descriptionHeader{margin-top: 7%; font-size:1.6em; }
+		a{margin-top:7%; font-size: 1.2em; font-family: "Andika"}
+		#nameHeader{font-size: 2.2em;}
 	}
 
-	@media (max-width: $screen-xs-max){
-		font-size:1.5em;
+	@media (min-width: $screen-md-min) and (orientation: landscape){
+		margin-top: 10%;
+		#descriptionHeader{margin-top: 10%; font-size:1.6em; }
+		a{margin-top:15%; font-size: 1.2em; font-family: "Andika"}
+		#nameHeader{font-size: 2.2em;}
 	}
-	padding-top:4%;
-	margin-top:7%;
-}
 
-
-.third{
 	@media (min-width: $screen-md-min){
-		margin-top: 6%;
+		margin-top: 7%;
+		#descriptionHeader{margin-top: 7%; font-size:2em; }
+		a{margin-top:10%; font-size: 2.2em; font-family: "Andika"}
+		#nameHeader{font-size: 3.8em;}
 	}
-	@media (min-width: $screen-xs-min) and (max-width: $screen-sm-max) {
-		@media (orientation: landscape){
-			margin-top:10%;
-		}
-		margin-top: 35%;		
+
+	@media (min-width: $screen-lg-min){
+		margin-top: 7%;
+		#descriptionHeader{margin-top: 7%; font-size:2em; }
+		a{margin-top:10%; font-size: 2.2em; font-family: "Andika"}
+		#nameHeader{font-size: 3.8em;}
 	}
 }
 
 
-.vcenter{
-	top: 0px;
-	bottom: 0px;
-	margin: auto;
+
+
+
+
+
+
+#aboutMePage{
+	color: white;
+	background-image: url("../img/backgrounds/binding_dark.png");
+	button{
+		width: 100%;
+		font-family: 'Andika';
+	}
 }
+
+.aboutMeText{
+	border-style: dashed;
+	border-width: 1px;
+	border-color:#999999;
+	padding: 15px 15px 15px 15px;
+	background-image: url("../img/lighter.png");
+	text-align: left;
+}
+
+.aboutMeHeader{
+	font-family: 'Alegreya';
+	letter-spacing: 4px;
+}
+
+
+.aboutRow{
+	@media (min-width: 10px){
+		.aboutMeHeader{margin-top:8%;}
+		.aboutMeText{font-size:1em; margin-top:12%;}
+		button {margin-top: 23%; font-size: 1.2em;}
+	}
+
+	@media (min-width: 10px) and (orientation: landscape){
+		.aboutMeHeader{margin-top:3%; font-size:1.2em}
+		.aboutMeText{font-size:1em; margin-top:8%;}
+		button {margin-top: 10%; font-size: 1.2em;}
+	}
+
+	@media (min-width: $screen-sm-min){
+		.aboutMeHeader{margin-top:12%; font-size:2.2em;}
+		.aboutMeText{font-size:1.8em; margin-top:20%;}
+		button {margin-top: 23%; font-size: 1.9em;}
+	}
+
+	@media (min-width: $screen-md-min) and (orientation: landscape) {
+		.aboutMeHeader{margin-top:3%; font-size:2.2em;}
+		.aboutMeText{font-size:1.8em; margin-top:20%;}
+		button {margin-top: 25%; font-size: 1.9em;}
+	}
+
+	@media (min-width: $screen-md-min){
+		.aboutMeHeader{margin-top:3%; font-size:2.2em;}
+		.aboutMeText{font-size:1.8em; margin-top:20%;}
+		button {margin-top: 25%; font-size: 1.9em;}
+	}
+}
+
+
+
