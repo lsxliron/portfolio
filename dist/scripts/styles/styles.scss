@@ -1,19 +1,7 @@
 @import "bsVariables";
-@import "faVariables";
+// @import "faVariables";
 @import "../vendor/bootstrap-sass-official/assets/stylesheets/bootstrap";
-@import "../vendor/fontawesome/scss/font-awesome";
-
-@font-face{
-    font-family:'FontAwesome';
-    font-weight:normal;
-    font-style:normal;
-    src:url('../vendor/fontawesome/fonts/fontawesome-webfont.eot?v=4.3.0');
-    src:url('../vendor/fontawesome/fonts/fontawesome-webfont.eot?#iefix&v=4.3.0') format('embedded-opentype'),
-        url('../vendor/fontawesome/fonts/fontawesome-webfont.woff2?v=4.3.0') format('woff2'),
-        url('../vendor/fontawesome/fonts/fontawesome-webfont.woff?v=4.3.0') format('woff'),
-        url('../vendor/fontawesome/fonts/fontawesome-webfont.ttf?v=4.3.0') format('truetype'),
-        url('../vendor/fontawesome/fonts/fontawesome-webfont.svg?v=4.3.0#fontawesomeregular') format('svg');
-}
+// @import "../vendor/fontawesome/scss/font-awesome";
 
 
 @font-face{
@@ -35,23 +23,17 @@
 
 html, body{min-height:100%; height:100%;}
 
-
-
-#nameHeader{
-	font-size:450%;
-	font-family: "Alegreya";
-}
-
-#descriptionHeader{
-	font-family: "Alegreya";
-}
-
 .page{
 	width: 100%;
 	min-height: 100%;
 	height: 100%;
 	position:relative;
 	text-align:center;
+}
+
+.fill{
+	height:100%;
+	min-height:100%;
 }
 
 #welcomePage{
@@ -61,43 +43,56 @@ html, body{min-height:100%; height:100%;}
 	background-image: url("../img/backgrounds/dark_mosaic.png");
 }
 
-.fill{
-	height:100%;
-	min-height:100%;
-}
+#nameHeader{font-family: "Alegreya";}
+#descriptionHeader{font-family: "Alegreya";}
 
-.getStartedButton{
-	width:100%;
-	@media (min-width: $screen-sm-min){
-		font-size: 2em;
-	}
 
-	@media (max-width: $screen-xs-max){
-		font-size:1.5em;
-	}
-	padding-top:4%;
-	margin-top:7%;
-}
+
 
 
 .welcomeRow{
+	@media (min-width: 10px){
+		margin-top: 10%;
+		#descriptionHeader{margin-top: 30%; font-size:1.6em; }
+		a{margin-top:30%; font-size: 1.2em; font-family: "Andika"}
+		#nameHeader{font-size: 2.2em;}
+	}
+	
+	@media (min-width: 10px) and (orientation: landscape){
+		margin-top: 2%;
+		#descriptionHeader{margin-top: 7%; font-size:1.6em; }
+		a{margin-top:7%; font-size: 1.2em; font-family: "Andika"}
+		#nameHeader{font-size: 2.2em;}
+	}
+
+	@media (min-width: $screen-md-min) and (orientation: landscape){
+		margin-top: 10%;
+		#descriptionHeader{margin-top: 10%; font-size:1.6em; }
+		a{margin-top:15%; font-size: 1.2em; font-family: "Andika"}
+		#nameHeader{font-size: 2.2em;}
+	}
+
 	@media (min-width: $screen-md-min){
-		margin-top: 6%;
+		margin-top: 7%;
+		#descriptionHeader{margin-top: 7%; font-size:2em; }
+		a{margin-top:10%; font-size: 2.2em; font-family: "Andika"}
+		#nameHeader{font-size: 3.8em;}
 	}
-	@media (min-width: $screen-xs-min) and (max-width: $screen-sm-max) {
-		@media (orientation: landscape){
-			margin-top:10%;
-		}
-		margin-top: 35%;		
+
+	@media (min-width: $screen-lg-min){
+		margin-top: 7%;
+		#descriptionHeader{margin-top: 7%; font-size:2em; }
+		a{margin-top:10%; font-size: 2.2em; font-family: "Andika"}
+		#nameHeader{font-size: 3.8em;}
 	}
 }
 
 
-.vcenter{
-	top: 0px;
-	bottom: 0px;
-	margin: auto;
-}
+
+
+
+
+
 
 #aboutMePage{
 	color: white;
@@ -105,45 +100,101 @@ html, body{min-height:100%; height:100%;}
 	button{
 		width: 100%;
 		font-family: 'Andika';
-		font-size: 180%;
-	}
-}
-
-.aboutMeHeader{
-	font-family: 'Alegreya';
-	letter-spacing: 4px;
-	margin-left:30px;
-	@media (orientation: landscape){
-		margin-top: 15%;
-	}
-	margin-top:22%;
-	@media (min-width: $screen-xs-min){
-		font-size: 0.7em;
-	}
-	span{
-		font-size: 1.3em;
-	}
-}
-
-
-.aboutRow{
-	@media (min-width: $screen-md-min){
-		margin-top:13%;
-	}
-	@media (min-width: $screen-xs-min) and (max-width: $screen-sm-max){
-		@media (orientation: landscape){
-			margin-top:16%;
-		}
-		margin-top:40%;
 	}
 }
 
 .aboutMeText{
-	margin-top:6%;
 	border-style: dashed;
 	border-width: 1px;
 	border-color:#999999;
 	padding: 15px 15px 15px 15px;
 	background-image: url("../img/lighter.png");
+	text-align: left;
 }
+
+.aboutMeHeader{
+	font-family: 'Alegreya';
+	letter-spacing: 4px;
+}
+
+
+.aboutRow{
+	@media (min-width: 10px){
+		.aboutMeHeader{margin-top:8%;}
+		.aboutMeText{font-size:1em; margin-top:12%;}
+		button {margin-top: 23%; font-size: 1.2em;}
+	}
+
+	@media (min-width: 10px) and (orientation: landscape){
+		.aboutMeHeader{margin-top:3%; font-size:1.2em}
+		.aboutMeText{font-size:1em; margin-top:8%;}
+		button {margin-top: 10%; font-size: 1.2em;}
+	}
+
+	@media (min-width: $screen-sm-min){
+		.aboutMeHeader{margin-top:12%; font-size:2.2em;}
+		.aboutMeText{font-size:1.8em; margin-top:20%;}
+		button {margin-top: 23%; font-size: 1.9em;}
+	}
+
+	@media (min-width: $screen-md-min) and (orientation: landscape) {
+		.aboutMeHeader{margin-top:3%; font-size:2.2em;}
+		.aboutMeText{font-size:1.8em; margin-top:20%;}
+		button {margin-top: 25%; font-size: 1.9em;}
+	}
+
+	@media (min-width: $screen-md-min){
+		.aboutMeHeader{margin-top:3%; font-size:2.2em;}
+		.aboutMeText{font-size:1.8em; margin-top:20%;}
+		button {margin-top: 25%; font-size: 1.9em;}
+	}
+}
+
+
+
+#portfolioPage{
+	color: white;
+	background-image: url('../img/backgrounds/classy_fabric.png');
+	img{border-radius:15px;}
+	label{font-family: 'Alegreya';}
+	button{ font-family: 'Andika';}
+}
+
+
+.webPortfolioRow{
+	@media (min-width:10px) and (max-width: $screen-xs-max){
+		img{margin-top:9%; width:90%}
+		label{font-size:1.5em; margin-top:5%}
+		button{margin-top:13%; font-size:1em}
+		
+		@media(orientation: landscape){
+			.col-xs-12{width:50%}
+			#a{width:100%; float:left}
+			#b{width:100%; float:right}
+		}
+	}
+
+	@media (min-width: $screen-sm-min){
+		img{margin-top:9%; width:80%}
+		label{font-size:2.3em; margin-top:5%}
+		button{margin-top:19%; font-size:2em}
+	}
+
+
+	@media (min-width: $screen-md-min) and (orientation: landscape){	
+		.col-md-12{width:50%}
+		#a{width:100%; float:left}
+		#b{width:100%; float:right}
+		img{margin-top:25%}
+		label{font-size:2.3em; margin-top:5%}
+		button{margin-top:40%; font-size:2em}
+	}
+
+	@media (min-width: $screen-lg-min){
+		img{margin-top:15%}
+		label{font-size:2.3em; margin-top:5%}
+		button{margin-top:20%; font-size:2em}	
+	}
+}
+
 

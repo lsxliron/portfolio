@@ -1,7 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>TEST</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width initial-scale=1">
+	<meta name="description" content="Portfolio of Liron Shimrony">
+	<meta name="keywords" content="HTML, CSS, JavaScript, python, django, web developer">
+	<meta name="author" content="Liron Shimrony">
+	<title>Liron Shimrony Portfolio</title>
 	<link href="scripts/styles/styles.css" rel="stylesheet" />
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 </head>
@@ -38,29 +43,58 @@
 <div id="aboutMePage" class="page fill">
 	<div class="container">
 
-		<div id="row aboutRow">
+		<div class="row aboutRow">
 			<div class="col-xs-12 col-sm-12 col-md-12">
-				<i class="fa fa-user fa-4x"><label class="aboutMeHeader"><span id="aboutMePerix">A</span> LITTLE BIT ABOUT MYSELF</label></i>
+				<div class="aboutMeHeader">
+					<i class="fa fa-user fa-1x"></i>
+					<label><span id="aboutMePerix">A</span> LITTLE BIT ABOUT MYSELF</label>
+				</div>
 			</div>
 		</div>
 
-
 		<div class="row aboutRow">
-			<div class="col-md-8 col-md-offset-2">
-				<h3 class="aboutMeText"  style="text-align: left;">
+			<div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">
+				<p class="aboutMeText">
 					My name is Liron Shimrony. I earned my B.Sc in computer science at the City College of New York and currently working towards my Master's degree. I love web development and data visualization and I work mostly with Python and Javascript.
-				</h3>
+				<p>
 			</div>
 		</div>
 
 		<div class="row aboutRow">
 			<div class="col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3 col-xs-8 col-xs-offset-2">
-				<button type="button" class='btn btn-primary portfolioButton'>View My Portfolio</button>
+				<button type="button" class='btn btn-primary'>View My Portfolio</button>
 			</div>
 		</div>
 	</div>
 </div>
 
+<!-- WEB PROTFOLIO -->
+<div id="portfolioPage" class="page fill">
+	<div class="container">
+		
+		<div class="row webPortfolioRow">
+			<div class="col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">
+				<label class="webPortfolioHeading">Web Portfolio</label>
+			</div>
+		</div>
+
+		<div class="row webPortfolioRow">
+			<div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+				<img src="scripts/img/webPortfolio/pysaass.png" alt="PYSAASS Cover Photo" id="a">
+			</div>
+			<div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+				<img src="scripts/img/webPortfolio/gobblet.png" alt="Gobblet Cover Photo" id="b">
+			</div>
+		</div>
+
+		<div class="row webPortfolioRow">
+			<div class="col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3 col-xs-8 col-xs-offset-2">
+				<button class="btn btn-primary">Other Projects</button>
+			</div>
+		</div>
+
+	</div>	<!-- CONTAINER -->
+</div>	<!-- PAGE -->
 
 
 
