@@ -256,3 +256,47 @@ blockquote{
 		button{margin-top:8%}
 	}
 }
+
+
+
+#contactMePage{
+	color:white;
+	background: #333333;
+}
+
+#contactMeLabel{font-family: 'Alegreya'}
+#emailLabel{font-family: 'Roboto'}
+#resumeLabel{font-family:'Alegreya'}
+button{font-family:'Andika'; width:100%;}
+
+.contactRow{
+	@media(min-width: 10px){
+		i{margin-right:8px}
+		#contactMeLabel{font-size:2em; margin-top:35%}
+		#emailLabel{font-size: 1.4em; margin-top:15%}
+		#resumeLabel{font-size:1.4em; margin-top:15%}
+		button{font-size:1em; margin-top:45%}
+
+		@media (orientation: landscape){
+			#contactMeLabel{margin-top:5%;}
+			#emailLabel{margin-top:5%}
+			#resumeLabel{margin-top:5%;}
+			button{margin-top:15%; font-size:1.3em;}
+		}
+	}
+
+	@media (min-width: $screen-sm-min){
+		#contactMeLabel{font-size: 2.9em}
+		#emailLabel{font-size: 2.8em}
+		#resumeLabel{font-size: 2.7em}
+		button{font-size:2.6em}
+	}
+
+	@media(min-width: $screen-md-min){
+		#contactMeLabel{margin-top:20%}
+	}
+
+	@media(min-width: $screen-lg-min){
+		#contactMeLabel{margin-top:10%;}
+	}
+}
