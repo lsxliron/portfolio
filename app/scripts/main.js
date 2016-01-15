@@ -11,5 +11,28 @@ require.config({
 });
 
 require(['jquery'], function($){
-	// alert('hello world!')
+
+	$('#welcomePage button').on('click', function(){
+		$('body').animate({scrollTop: $('#aboutMePage').offset().top}, 1000);
+	});
+
+	$('#aboutMePage button').on('click', function(){
+		$('body').animate({scrollTop: $('#portfolioPage').offset().top}, 1000);
+	});
+
+	$('#portfolioPage button').on('click', function(){
+		$('body').animate({scrollTop: $('#programmingProjects').offset().top}, 1000);
+	});
+
+	$('#programmingProjects button').on('click', function(){
+		$('body').animate({scrollTop: $('#contactMePage').offset().top}, 1000);
+	});
+
+	$('#contactMePage button').on('click', function(){
+		$('body').animate({scrollTop: $('#profilesPage').offset().top}, 1000);
+	});
+
+
+
+
 })

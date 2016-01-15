@@ -46,14 +46,30 @@ a:link{color:white}
 }
 
 #nameHeader{font-family: "Alegreya";}
-#descriptionHeader{font-family: "Alegreya";}
+
+
+#descriptionHeader{
+	font-family: "Alegreya";
+	-webkit-transition: all 0.3s ease-out;
+	-ms-transition: all 0.3s ease-out;
+	transition: all 0.3s ease-out;
+	-webkit-transform: scale(1);
+	-ms-transform: scale(1);
+	transform: scale(1);
+}
+
+#descriptionHeader:hover{
+	-webkit-transform: scale(1.4);
+	-ms-transform: scale(1.4);
+	transform: scale(1.4);
+}
 
 
 
 
 
 .welcomeRow{
-	a{
+	button{
 		
 		padding-right:20px;
 		
@@ -61,35 +77,35 @@ a:link{color:white}
 	@media (min-width: 10px){
 		margin-top: 10%;
 		#descriptionHeader{margin-top: 30%; font-size:1.6em; }
-		a{margin-top:30%; font-size: 1.2em; font-family: "Andika"}
+		button{margin-top:30%; font-size: 1.2em; font-family: "Andika"}
 		#nameHeader{font-size: 2.2em;}
 	}
 	
 	@media (min-width: 10px) and (orientation: landscape){
 		margin-top: 2%;
 		#descriptionHeader{margin-top: 7%; font-size:1.6em; }
-		a{margin-top:7%; font-size: 1.2em; font-family: "Andika"}
+		button{margin-top:7%; font-size: 1.2em; font-family: "Andika"}
 		#nameHeader{font-size: 2.2em;}
 	}
 
 	@media (min-width: $screen-md-min) and (orientation: landscape){
 		margin-top: 10%;
 		#descriptionHeader{margin-top: 10%; font-size:1.6em; }
-		a{margin-top:15%; font-size: 1.2em; font-family: "Andika"}
+		button{margin-top:15%; font-size: 1.2em; font-family: "Andika"}
 		#nameHeader{font-size: 2.2em;}
 	}
 
 	@media (min-width: $screen-sm-min){
 		margin-top: 7%;
 		#descriptionHeader{margin-top: 7%; font-size:2em; }
-		a{margin-top:10%; font-size: 2.2em; font-family: "Andika"}
+		button{margin-top:10%; font-size: 2.2em; font-family: "Andika"}
 		#nameHeader{font-size: 3.8em;}
 	}
 
 	@media (min-width: $screen-lg-min){
 		margin-top: 7%;
 		#descriptionHeader{margin-top: 7%; font-size:2em; }
-		a{margin-top:10%; font-size: 2.2em; font-family: "Andika"}
+		button{margin-top:10%; font-size: 2.2em; font-family: "Andika"}
 		#nameHeader{font-size: 3.8em;}
 	}
 }
@@ -263,12 +279,48 @@ blockquote{
 #contactMePage{
 	color:white;
 	background: #333333;
+	button{font-family:'Andika'; width:100%;}
 }
 
-#contactMeLabel{font-family: 'Alegreya'}
+#contactMeLabel{
+	font-family: 'Alegreya';
+	font-variant: small-caps;
+	font-weight: lighter;
+	letter-spacing: 4px;
+	-webkit-transition: all 0.2s ease-out;
+	-ms-transition: all 0.2 ease-out;
+	transition: all 0.2s ease-out;
+	-webkit-transform: scale(1);
+	-ms-transform: scale(1);
+	transform: scale(1);
+}
+
+#contactMeLabel:hover{
+	-webkit-transform: scale(1.2);
+	-ms-transform: scale(1.2);
+	transform: scale(1.2);
+}
+
 #emailLabel{font-family: 'Roboto'}
-#resumeLabel{font-family:'Alegreya'}
-button{font-family:'Andika'; width:100%;}
+
+#resumeLabel{
+	font-family:'Alegreya';
+	font-weight: lighter;
+	-webkit-transition: all 0.3s ease-out;
+	-ms-transition: all 0.3 ease-out;
+	transition: all 0.3s ease-out;
+	-webkit-transform: skewX(0deg);
+	-ms-transform: skewX(0deg);
+	transform: skewX(0deg);
+}
+#resumeLabel:hover{
+	-webkit-transform: skewX(35deg);
+	-ms-transform: skewX(35deg);
+	transform: skewX(35deg);
+}
+
+
+
 
 .contactRow{
 	@media(min-width: 10px){
@@ -304,7 +356,20 @@ button{font-family:'Andika'; width:100%;}
 
 #profilesPage{
 	background-image: url("../img/backgrounds/binding_dark.png");
-	color:white;	
+	color:white;
+	i{
+		-webkit-transition: all 0.3s ease-out;
+		-ms-transition: all 0.3s ease-out;
+		transition: all 0.3s ease-out; 
+		-webkit-transform: rotate(0deg); 
+		-ms-transform: rotate(0deg); 
+		transform:rotate(0deg);
+	}	
+	i:hover{
+		-webkit-transform: rotate(45deg); 
+		-ms-transform: rotate(45deg); 
+		transform:rotate(45deg);
+	}
 }
 
 #profilesHeader{font-family:"Alegreya"}
