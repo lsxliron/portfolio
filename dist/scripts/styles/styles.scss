@@ -1,7 +1,7 @@
 @import "bsVariables";
-// @import "faVariables";
+@import "faVariables";
 @import "../vendor/bootstrap-sass-official/assets/stylesheets/bootstrap";
-// @import "../vendor/fontawesome/scss/font-awesome";
+@import "../vendor/fontawesome/scss/font-awesome";
 
 
 @font-face{
@@ -231,7 +231,7 @@ blockquote{
 .progRow{
 	blockquote:hover{
 		cursor: pointer;
-		background: rgba(80, 160, 250, .50);
+		background: rgba(80, 160, 250, 0.50);
 	}
 	@media (min-width: 10px){
 		label{font-size: 1.3em; margin-top:7%; margin-bottom:12%}
@@ -252,7 +252,8 @@ blockquote{
 	}
 
 	@media (min-width:$screen-lg-min){
-		label{font-size:3em; margin-top:7%; margin-bottom:10%;}
+		label{font-size:3em; margin-top:2%; margin-bottom:6%;}
+		blockquote{font-size:1.7em;}
 		button{margin-top:8%}
 	}
 }
@@ -298,5 +299,33 @@ button{font-family:'Andika'; width:100%;}
 
 	@media(min-width: $screen-lg-min){
 		#contactMeLabel{margin-top:10%;}
+	}
+}
+
+#profilesPage{
+	background-image: url("../img/backgrounds/binding_dark.png");
+	color:white;	
+}
+
+#profilesHeader{font-family:"Alegreya"}
+
+.profilesRow{
+	@media(min-width: 10px){
+		#profilesHeader{font-size:1.8em; margin-top:10%;}
+		i{margin-top:30px; margin-bottom:40px}
+		
+		@media(orientation: landscape){
+			#profilesHeader{margin-top:5%;}
+			i{margin-top:20px;margin-bottom:30px}
+		}
+	}
+
+	@media(min-width: $screen-sm-min){
+		#profilesHeader{font-size:3.0em; margin-top:10%; margin-bottom:15%}
+		i{margin-top:50px; margin-bottom:40px;}
+	}
+
+	@media(min-width: $screen-lg-min){
+		#profilesHeader{margin-top: 5%; margin-bottom:10%;}
 	}
 }
