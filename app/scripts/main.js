@@ -12,6 +12,8 @@ require.config({
 
 require(['jquery'], function($){
 
+
+	//Bind scrolls to buttons
 	$('#welcomePage button').bind('click', function(){
 		$('body').animate({scrollTop: $('#aboutMePage').offset().top}, 1000);
 	});
