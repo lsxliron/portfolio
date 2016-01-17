@@ -9,10 +9,14 @@
 	<title>Liron Shimrony Portfolio</title>
 	<link href="scripts/styles/styles.css" rel="stylesheet" />
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="scripts/vendor/sidr/dist/stylesheets/jquery.sidr.dark.css" />
 </head>
 <body>
 
 <!-- WELCOME PAGE -->
+<div class="menuButton">
+<a id="menuLink" href="#sidr"><i class="fa fa-bars fa-1x"></i></a>
+</div>
 <div id="welcomePage" class="page fill">
 	<div class="container">
 		<div class="row welcomeRow">
@@ -227,6 +231,26 @@
 		
 	</div>	<!--CONTAINER-->
 </div>	<!--PAGE-->
+
+
+<div id="sidr">
+  <!-- Your content -->
+  <ul>
+  	<li>
+  		<a id="closeMenuLi" href="#">
+  			<div id="closeMenuButton">
+  				<i class="fa fa-angle-double-left fa-1x"></i>
+			</div>
+		</a>
+	</li>
+    <li><a id="welcomeLi" href="#"><i class="fa fa-thumbs-up fa-1x"></i>Welcome</a></li>
+    <li><a id="aboutMeLi" href="#"><i class="fa fa-user fa-1x"></i>About Me</a></li>
+    <li><a id="portfolioLi" href="#"><i class="fa fa-picture-o fa-1x"></i>Portfolio</a></li>
+    <li><a id="projectsLi" href="#"><i class="fa fa-flask fa-1x"></i>Projects</a></li>
+    <li><a id="contactLi" href="#"><i class="fa fa-envelope fa-1x"></i>Contact & Resume</a></li>
+    <li><a id="ProfilesLi" href="#"><i class="fa fa-link fa-1x"></i>Profiles</a></li>
+  </ul>
+</div>
 
 	<script data-main="scripts/main.js" src="scripts/vendor/requirejs/require.js"></script>
 </body>
