@@ -3,7 +3,7 @@ require.config({
 	paths: {
 		"jquery": "vendor/jquery/dist/jquery",
 		"bootstrap": "vendor/bootstrap-sass-official/assets/javascripts/bootstrap.min",
-		"sidr": "vendor/sidr/dist/jquery.sidr.min"
+		"sidr": "vendor/sidr/dist/jquery.sidr.min",
 	},
 
 	shim: {
@@ -12,7 +12,7 @@ require.config({
 	}
 });
 
-require(['jquery', 'sidr'], function($, sidr){
+require(['jquery', 'sidr', 'bootstrap'], function($, sidr, bootstrap){
 
 
 	//Bind scrolls to buttons
@@ -41,11 +41,14 @@ require(['jquery', 'sidr'], function($, sidr){
 	});
 
 
+	// Create sidbar
 	$('.menuButton').sidr({displace:false});
 
+	//Bind sidebar closing button
 	$('#closeMenuLi').bind('click', function(e){
 		$.sidr('toggle', 'sidr')
 		e.preventDefault()
-	})
+	});
+
 
 })

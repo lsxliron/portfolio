@@ -6,6 +6,6 @@
 		"requirejs": null,
 		"fontawesome": null,
 		"bootstrap-sass-official": null,
-		"sidr":"2.0.0"
+		"sidr":"2.0.0",
 	}
 }
