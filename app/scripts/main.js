@@ -43,8 +43,9 @@ require(['jquery', 'sidr'], function($, sidr){
 
 	$('.menuButton').sidr({displace:false});
 
-	$('#closeMenuLi', '#sidr > ul > li').bind('click', function(){
-		$.sidr('close', 'sidr')
+	$('#closeMenuLi').bind('click', function(e){
+		$.sidr('toggle', 'sidr')
+		e.preventDefault()
 	})
 
 })
