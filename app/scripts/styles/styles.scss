@@ -357,6 +357,11 @@ blockquote{
 		-ms-transform: skewX(35deg);
 		transform: skewX(35deg);
 	}
+	a{
+		&:visited{color: #FFFFFF; text-decoration: none}
+		&:hover{text-decoration: none}
+		&:link{color:white}
+	}
 }
 
 
