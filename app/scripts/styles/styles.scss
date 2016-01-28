@@ -304,10 +304,12 @@ blockquote{
 		blockquote{font-size:2em; margin-bottom: 40px;}
 		button{font-size:2em; margin-top:15%;}
 	}
-
+	
+	@media (min-width: $screen-md-min){
+		blockquote{font-size:1.7em}
+	}
 	@media (min-width:$screen-lg-min){
 		label{font-size:3em; margin-top:2%; margin-bottom:6%;}
-		blockquote{font-size:1.7em;}
 		button{margin-top:8%}
 	}
 }
